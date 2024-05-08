@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Controller
 public class EquationController {
 
-    @CrossOrigin(origins = "127.0.0.1:5500")
+    @CrossOrigin(origins = "/**")
     @PostMapping("/getEquation")
     public ResponseEntity<?> getEquation(@RequestBody EquationProperties e){
         CodeImplementation implementation = new CodeImplementation();
