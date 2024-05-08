@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
-@CrossOrigin
 public class EquationController {
 
+    @CrossOrigin
     @PostMapping("/getEquation")
     public ResponseEntity<?> getEquation(@RequestBody EquationProperties e){
         CodeImplementation implementation = new CodeImplementation();
